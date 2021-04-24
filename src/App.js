@@ -8,7 +8,7 @@ function App() {
   const handleClick = async () => {
     console.log(query);
     const res = await fetch(
-      `http://hotline.whalemuseum.org/api.json?species=${query}`
+      `https://hotline.whalemuseum.org/api.json?species=${query}`
     );
     const sightings = await res.json();
     console.log(sightings);
